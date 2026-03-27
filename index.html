@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!-- import the script.js file -->
+    <!-- We need to import JQUERY Library to make the api call-->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+	<link href="components.css" rel="stylesheet" type="text/css" />
+    <script src="components.js"></script>
+
+  </head>
+  
+  <!-- Call the int function when website loads -->
+  <body onload="init()">
+    <div>
+      <!--  Header or Banner -->
+      <div id="header">
+        <h1> MY SONGS </h1>
+      </div>
+      <!--  nav bar -->
+      <nav class="navbar">
+            <a href="index.html" class="bar" style="font-family: 'Times New Roman', Times, serif; font-size: 25px;">Songs</a>   
+            <a href="artists.html" class="bar" style="font-family: 'Times New Roman', Times, serif; font-size: 25px;">Artists</a> 
+            <a href="albums.html" class="bar" style="font-family: 'Times New Roman', Times, serif; font-size: 25px;">Albums</a>
+      </nav>
+      
+      <div class="container">
+        
+
+        <div class="left-panel">
+          <div class="search-song">
+            <h4>Search by song name</h4>
+            <input type="text" placeholder="Enter song name" id="songname"/>        
+            <a class="button" onclick="filterBySongName()"> Search </a><br>
+            <h4 id="count"></h4>
+          </div>
+          <div class="search-genre">
+            <h4>Search by genre</h4>
+            <input type="text" placeholder="Enter genre" id="genres"/>
+            <a class="button" onclick="filterByGenre()"> Search </a><br>
+            <h4 id="count1"></h4>
+          </div>
+        </div>
+
+        
+        <div id='centerpanel' class='container'>
+          
+        </div>
+        
+      </div>
+
+      <div id='footer'>
+        <h3> © Made by Jie Ren </h3>
+      </div>
+
+    </div>
+    
+  </body>
+</html>

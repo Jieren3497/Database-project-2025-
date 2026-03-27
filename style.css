@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fdf6e3;
+}
+
+#header{
+  background-color: #3b5998;
+  text-align: center;
+  padding: 75px;
+  font-size: 20px;
+  font-weight: bold;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+#nav{
+  padding: 5px;
+  display: flex;
+  text-align: center;
+  border: solid 2px black;
+  background-color:Khaki;
+}
+
+.container{
+  display:flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+/* Panels */
+.left-panel {
+  background-color:#385a7e;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.left-panel .search-song,
+.left-panel .search-age,
+.left-panel .search-byName,
+.left-panel .search-genre {
+  background-color: #54acbf;
+  border: 2px solid #a7ebf2;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-panel h4 {
+  margin-top: 0;
+  font-family: 'Georgia', serif;
+  color: #333;
+}
+
+.left-panel input {
+  width: 100%;
+  padding: 6px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.left-panel a {
+  background-color: #68a2e8;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+  transition: background-color 0.2s ease;
+}
+
+.left-panel a:hover {
+  background-color: #f57f17;
+}
+
+
+.panel{
+  flex:1;
+  text-align: center;
+  min-height:500px;
+  background-color:#385a7e;
+}
+
+#centerpanel{
+  flex:2;
+  text-align: center;
+  min-height:500px;
+  background-color:#6987b4;
+}
+#footer {
+  background-color: #3f5b99; 
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  border-top: 2px solid #2e3d65; 
+}
+
+
+.card{
+  /*flex:1;   THIS SQUISHES */
+  /*flex-basis:150px   */
+  width:450px;
+  margin:5px;
+  padding:5px;
+  border:1px solid black;
+  text-align:center;
+  background-color:#dedfe7;
+}
+/* target all h4 elements*/
+h4{
+  color:#0000ff;
+}
+/*target all the paragraphs in the card class*/
+.card p{
+  font-size:17px;
+  color: black;
+  font-family:verdana;
+  font-style:italic;
+}
+.card div{
+  font-weight: bold;
+  text-decoration: underline;
+  font-size:15px;
+  color: black;
+  font-family:verdana;
+  font-style:italic;
+}
+.card di2{
+  font-size:17px;
+  color: black;
+  font-family:verdana;
+  font-style:italic;
+}
+.card img{
+  width:75px;
+  height:75px;
+}
+.button{
+  text-decoration: none;
+  background-color:rgb(44, 44, 44);
+  color:white;
+  flex-wrap: wrap;
+  flex: 1;
+  height: 50px;
+}
+.button:hover{
+  background-color:grey;
+}
+.bar{
+  text-decoration: none;
+  color:#fefefe;
+}
+.bar:hover{
+  color: #54acbf;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+.navbar{
+  display: flex;
+  background-color: #526895;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+}
+.navbar *{
+  flex: 1;
+  text-align: center;
+}
+
+
+/* Flip Card */
+.flip-card {
+  background-color: transparent;
+  width: 250px;
+  height: 300px;
+  perspective: 1000px;
+  margin: 10px;
+  display: inline-block;
+}
+.flip-card img{
+	max-height: 275px;
+	max-width: 225px;
+}
